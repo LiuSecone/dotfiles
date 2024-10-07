@@ -4,7 +4,7 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 # zsh
 sudo apt update
-sudo apt install -y zsh
+sudo apt install -y zsh fish
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # antigen
@@ -14,5 +14,3 @@ curl -L git.io/antigen > "$ANTIGEN"
 
 cp ./.zshrc ~/.zshrc
 cp ./.antigenrc ~/.antigenrc
-
-sudo chsh -s $(which zsh)
